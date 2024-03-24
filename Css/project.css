@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.navigation__menu__menushka {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.navigation {
+    background-color: rgb(80, 86, 88);
+
+}
+.navigation .navigation__h1{
+    color: white;
+}
+
+.navigation__menu {
+    width: 50%;
+}
+
+.navigation>.container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__menu__menushka>li>a {
+    text-decoration: none;
+    color: rgb(205, 200, 200);
+}
+
+.navigation__registration {
+    position: relative;
+    left: 30px;
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navigation__registration>button {
+    padding-right: 20px;
+    height: 40px;
+    border-radius: 8px;
+    color: rgb(205, 200, 200);
+    box-shadow: 2px 0px 1px;
+}
+
+.navigation__registration_button1 {
+    background-color: rgb(201, 42, 42);
+}
+
+.navigation__registration_button2 {
+    background-color: rgb(82, 82, 208);
+}
+
+.select {
+    /* top: 82px; */
+    position: absolute;
+    top: 0;
+    background-color: rgb(80, 86, 88);
+}
+
+.select>select {
+    background-color: rgb(80, 86, 88);
+}
+
+/* ========================================================================================================================================== */
+
+.kino__old {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.kino__old .kino {
+    width: 200px;
+    margin: 10px 10px 20px 20px;
+}
+
+.kino__child {
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.kino__child img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.overlay>.overlay__list ul {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    align-items: end;
+
+
+
+}
+
+.overlay>.overlay__list {
+    display: flex;
+    align-items: start;
+    padding-bottom: 30px;
+    height: 10px;
+}
+
+.overlay>.overlay__list ul {
+    position: relative;
+    bottom: 15px;
+    right: 4px;
+}
+
+.overlay div {
+    padding-left: 13px;
+    padding-right: 6px;
+}
+
+.kino__child h4 {
+    color: rgb(217, 219, 220);
+}
+
+.overlay>.overlay__list .overlay__li2 {
+    margin-left: 13px;
+
+}
+
+
+.overlay>.overlay__list li {
+    list-style-type: none;
+    color: rgb(217, 219, 220);
+    margin: 0;
+    font-size: 13px;
+
+
+}
+
+.overlay>.overlay__coment {
+    padding-top: 5px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 12px;
+    right: 8px;
+
+}
+
+.overlay p {
+    color: rgb(201, 201, 201);
+    font-size: 14px;
+    margin: 0;
+}
+
+.kino__child:hover .overlay {
+    opacity: 1;
+}
+
+.kino>.kino__child__coment a {
+    text-decoration: none;
+    padding-left: 5px;
+}

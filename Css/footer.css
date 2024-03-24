@@ -1,0 +1,163 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    height: 350px;
+    
+    background-color: rgba(55, 55, 72, 0.93);
+    align-items: center;
+
+    
+}
+.footer li{
+    list-style-type: none;
+}
+
+.footer  li  a{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer_name > a {
+    color: rgb(108, 108, 108);
+}
+
+.footer >.footer__ikonka{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.footer  .footer__ikonka_name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+   
+}
+.footer__1{
+   
+    width: 18%;
+    
+
+}
+
+
+.footer__1 .footer__1__menu {
+
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+  
+}
+
+.footer__1 .footer__1__menu > li{
+    margin-top: 20px;
+}
+
+.footer__2 .footer__2__menu {
+
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+.footer__2 .footer__2__menu > li{
+    margin-top: 20px;
+}
+
+
+.footer__3 .footer__3__menu {
+
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+  
+}
+
+.footer__3 .footer__3__menu > li{
+    margin-top: 20px;
+}
+
+.footer__2{
+    width: 18%;
+    
+}
+
+
+
+.footer__3{
+    width: 18%;
+
+}
+
+.fa {
+   
+   
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  
+
+    color: rgb(237, 237, 237);
+
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  /* .footer__bottom_hr{
+    display: block;
+    margin: 0;
+  } */
+
+.footer__bottom{
+    background-color: rgba(55, 55, 72, 0.93);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid black;
+
+}
+.footer_bottom__1{
+    color: rgb(108, 108, 108);
+    
+}
+.footer__bottom a{
+    text-decoration: none;
+}
+
+.footer_bottom__2{
+    color:white;
+    
+}
+.footer__ikonka .network{
+    margin-top: 120px;
+    display: flex;
+    
+    justify-content: start;
+}
+.fa-youtube{
+    margin-right: 420px;
+}
+
+
