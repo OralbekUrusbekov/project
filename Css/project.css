@@ -21,6 +21,11 @@ body {
     display: flex;
     justify-content: space-evenly;
 
+    margin: 0;
+    height: 83px;
+    
+    align-items: center;
+
 }
 
 .navigation {
@@ -33,16 +38,27 @@ body {
 
 .navigation__menu {
     width: 50%;
+    height: 100%;
 }
 
 .navigation>.container {
     justify-content: space-between;
     align-items: center;
 }
+.navigation__menu__menushka > li{
+    padding-top: 31px;
+    height: 100%;
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+
+}
 
 .navigation__menu__menushka>li>a {
     text-decoration: none;
     color: rgb(205, 200, 200);
+    height: 100%;
+   
 }
 
 .navigation__registration {

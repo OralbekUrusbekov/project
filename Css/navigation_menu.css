@@ -1,0 +1,73 @@
+.menushka__tizim{
+    width: 100%;
+    height: 350px;
+     position: fixed;
+     z-index: 1;
+    display: none;
+    left: 0;
+    background-color: rgb(232, 232, 232);
+
+    z-index:1;
+     margin-top:50px;
+
+}
+.menushka_film:hover > .divka1{
+    display: initial;
+}
+
+.menushka_multik:hover > .divka2{
+    display: initial;
+}
+.menushka_anime:hover > .divka3{
+    display: initial;
+}
+
+.menushka__tizim-divka{
+    display: flex;
+}
+.menushka__tizim-divka > ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    
+}
+.menushka__tizim-divka  ul li a{
+    text-decoration: none;
+    color: rgb(55, 53, 53);
+   
+}
+.menushka__tizim-divka  ul li a:hover{
+    
+    color: rgb(43, 40, 141);
+    font-size: 20px;
+}
+.menushka__tizim-divka  ul li a:active{
+    
+    color: rgb(54, 74, 47);
+}
+.menushka__tizim-divka > ul{
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    
+}
+.image{
+   
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image > img{
+   
+   
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+}
