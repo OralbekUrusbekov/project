@@ -6,58 +6,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kung pu panda</title>
     <link rel="stylesheet" href="../Css/kino.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/register.css">
+    <link rel="stylesheet" href="../Css/navigation_menu.css">
 </head>
-<style>
-    /* body {
-        background-color: rgb(255, 255, 255);
-    } */
-</style>
-
 <body>
+ <!-- 
+    ====================================Modal_knopka===============================================================
+    ===============================================================================================================
+    =============================================================================================================== -->
+
+    <div class="modal" id="modal_screen">
+        <div class="modal_window">
+
+            <button class="my_close_btn" id="my_close_btn">
+            <svg width = "23" height = "25" viewBox="0 0 23 25" fill = "none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill = "#333333"/>
+
+                <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"  fill="#333333"/>
+            </svg>
+        </button>
+            <div class="modal_okno">
+                <div class="wrapper">
+                  <div class="title-text">
+                    <div class="title login">Login</div>
+                    <div class="title signup">Signup</div>
+                  </div>
+                  <div class="form-container">
+                    <div class="slide-controls">
+                      <input type="radio" name="slide" id="login" checked>
+                      <input type="radio" name="slide" id="signup">
+                      <label for="login" class="slide login">Login</label>
+                      <label for="signup" class="slide signup">Sign up</label>
+                      <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                      <form action="#" class="login">
+                        <div class="field">
+                          <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                          <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                        <div class="field btn">
+                          <div class="btn-layer"></div>
+                          <input class = "input" type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">Not a member? <a href="#">Sign up now</a></div>
+                      </form>
+                      <form action="#" class="signup">
+                        <div class="field">
+                          <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                          <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                          <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn">
+                          <div class="btn-layer"></div>
+                          <input type="submit" value="Sign up">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
     <!-- 
      ======================================NOVIGATION=============================================================== -->
     <!-- 
     ================================================================================================================= -->
     <!-- 
     ================================================================================================================= -->
-    <!-- 
-    ================================================================================================================= -->
-    <!-- 
-    ================================================================================================================= -->
-    <!-- 
-    ================================================================================================================= -->
+ 
 
     <div class="navigation">
         <div class="container">
             <h1 class="navigation__h1">Ororo.kz</h1>
 
             <div class="navigation__menu">
+                <nav>
                 <ul class="navigation__menu__menushka">
-                    <li><a href="">Фильмдер</a></li>
-                    <li><a href="">Мультфилмдер</a></li>
-                    <li><a href="">Аниме</a></li>
+                    <li class = "menushka_film"><a href="">Фильмдер</a>
+                        <div class = "menushka__tizim divka1">
+                            <div class="menushka__tizim-divka ">
+                            <ul>
+                                <li><a href = "#">Вестерны</a></li>
+                                <li><a href = "#">Арт-хаус</a></li>
+                                <li><a href = "#">Криминал</a></li>
+                                <li><a href = "#">Фантастика</a></li>
+                                <li><a href = "#">Ужасы</a></li>
+                                <li><a href = "#">Документальные</a></li>
+                                <li><a href = "#">Познавательные</a></li>
+                                
+                            </ul>
+                             <ul>
+                                <li><a href = "#">Семейные</a></li>
+                                <li><a href = "#">Военные</a></li>
+                                <li><a href = "#">Драмы</a></li>
+                                <li><a href = "#">Мелодрамы</a></li>
+                                <li><a href = "#">Музыкальные</a></li>
+                                <li><a href = "#">Детские</a></li>
+                                <li><a href = "#">Концерт</a></li>
+                            </ul>
+                                <ul>
+                                <li><a href = "#">Фэнтези</a></li>
+                                <li><a href = "#">Боевики</a></li>
+                                <li><a href = "#">Приключения</a></li>
+                                <li><a href = "#">Комедии</a></li>
+                                <li><a href = "#">Мюзиклы</a></li>
+                                <li><a href = "#">Театр</a></li>
+                                <li><a href = "#">Инонстранц</a></li>
+                            </ul>
+                              <ul>
+                                <li><a href = "#">Биографические</a></li>
+                                <li><a href = "#">Детективы</a></li>
+                                <li><a href = "#">Спортивные</a></li>
+                                <li><a href = "#">Триллеры</a></li>
+                                <li><a href = "#">Исторические</a></li>
+                                <li><a href = "#">Путешествия</a></li>
+                                <li><a href = "#">Стендап</a></li>
+                            </ul>
+                            <div class="image">
+                                <img src="../images/cat1.jpeg" alt="cat">
+                                <img src="../images/cat2.jpeg" alt="cat">
+                                <img src="../images/cat3.jpeg" alt="cat">
+                                <img src="../images/cat4.jpeg" alt="cat">
+                            </div>
+                              </div>
+                        </div>
+        
+                    </li> 
+                    <li class = "menushka_multik"><a href="">Мультфилмдер</a>
+                        <div class = "menushka__tizim divka2">
+                            <div class="menushka__tizim-divka">
+                            <ul>
+                                <li><a href = "#">Фантастика</a></li>
+                                <li><a href = "#">Комедия</a></li>
+                                <li><a href = "#">Мелодрамы</a></li>
+                                <li><a href = "#">Триллеры</a></li>
+                                <li><a href = "#">Сказка</a></li>
+                                <li><a href = "#">Спортивнык</a></li>
+                                <li><a href = "#">Детские</a></li>
+                                
+                            </ul>
+                             <ul>
+                                <li><a href = "#">Фэнтези</a></li>
+                                <li><a href = "#">Вестерны</a></li>
+                                <li><a href = "#">Арт-хаус</a></li>
+                                <li><a href = "#">Исторические</a></li>
+                                <li><a href = "#">Семейные</a></li>
+                                <li><a href = "#">Познавательные</a></li>
+                                <li><a href = "#">Для взрослых</a></li>
+                            </ul>
+                                <ul>
+                                <li><a href = "#">Боевики</a></li>
+                                <li><a href = "#">Военные</a></li>
+                                <li><a href = "#">Детективы</a></li>
+                                <li><a href = "#">Документальные</a></li>
+                                <li><a href = "#">Ужасы</a></li>
+                                <li><a href = "#">Мюзиклы</a></li>
+                                <li><a href = "#">Мультсериалы</a></li>
+                            </ul>
+                              <ul>
+                                <li><a href = "#">Биографические</a></li>
+                                <li><a href = "#">Драмы</a></li>
+                                <li><a href = "#">Криминал</a></li>
+                                <li><a href = "#">Приключения</a></li>
+                                <li><a href = "#">Аниме</a></li>
+                                <li><a href = "#">Короткометражные</a></li>
+                                <li><a href = "#">English</a></li>
+                            </ul>
+                            <div class="image">
+                                <img src="../images/cat1.jpeg" alt="cat">
+                                <img src="../images/cat2.jpeg" alt="cat">
+                                <img src="../images/cat3.jpeg" alt="cat">
+                                <img src="../images/cat4.jpeg" alt="cat">
+                            </div>
+                              </div>
+                        </div>
+                    </li>
+                    <li class = "menushka_anime"><a href="">Аниме</a>
+                        <div class = "menushka__tizim divka3">
+                            <div class="menushka__tizim-divka">
+                            <ul>
+                                <li><a href = "#">Детективы</a></li>
+                                <li><a href = "#">Комедия</a></li>
+                                <li><a href = "#">Ужасы</a></li>
+                                <li><a href = "#">Боевики</a></li>
+                                <li><a href = "#">Образовательные</a></li>
+                                <li><a href = "#">Детские</a></li>
+                                <li><a href = "#">Махо-сёдзё</a></li>
+                                
+                            </ul>
+                             <ul>
+                                <li><a href = "#">Военные</a></li>
+                                <li><a href = "#">Романтические</a></li>
+                                <li><a href = "#">Музыкальные</a></li>
+                                <li><a href = "#">Самурайский боевик</a></li>
+                                <li><a href = "#">Пародия</a></li>
+                                <li><a href = "#">Кодомо</a></li>
+                                <li><a href = "#">Сёнэн</a></li>
+                            </ul>
+                                <ul>
+                                <li><a href = "#">Драмы</a></li>
+                                <li><a href = "#">Фантастика</a></li>
+                                <li><a href = "#">Исторические</a></li>
+                                <li><a href = "#">Спортивные</a></li>
+                                <li><a href = "#">Школа</a></li>
+                                <li><a href = "#">Сёдзё-ай</a></li>
+                                <li><a href = "#">Этти</a></li>
+                            </ul>
+                              <ul>
+                                <li><a href = "#">Триллеры</a></li>
+                                <li><a href = "#">Приключения</a></li>
+                                <li><a href = "#">Мистические</a></li>
+                                <li><a href = "#">Боевые искусства</a></li>
+                                <li><a href = "#">Повседневност</a></li>
+                                <li><a href = "#">Сказки</a></li>
+                                <li><a href = "#">Меха</a></li>
+                            </ul>
+                            <div class="image">
+                                <img src="../images/cat1.jpeg" alt="cat">
+                                <img src="../images/cat2.jpeg" alt="cat">
+                                <img src="../images/cat3.jpeg" alt="cat">
+                                <img src="../images/cat4.jpeg" alt="cat">
+                            </div>
+                              </div>
+                        </div>
+                    </li>
                     <li><a href="">Marvel</a></li>
                     <li><a href="">DS</a></li>
                 </ul>
-
+            
             </div>
 
             <div class="navigation__registration">
-                <button class="navigation__registration_button1">Registration</button>
-                <button class="navigation__registration_button2">To come in</button>
+                <button class="navigation__registration_button1" id="my_open_btn">Registration</button>
+                <button class="navigation__registration_button2"  id="my_open_btn1">To come in</button>
                 </ul>
             </div>
 
         </div>
+     
 
-        <div class="select">
-            <select name="" id="">
-                <option value="">Kz</option>
-                <option value="">Rus</option>
-                <option value="">En</option>
-            </select>
-        </div>
+
     </div>
+    <div class="select">
+        <select name="" id="">
+            <option value="">Kz</option>
+            <option value="">Rus</option>
+            <option value="">En</option>
+        </select>
+    </div>
+</div>
+
+
     
     <!-- 
     ================================================================================================================= -->
@@ -236,7 +444,68 @@
             </div>
         </div>
     </div>
-    <script src="project.js"></script>
+     <!--  ----------------------------------------------------Footer------------------------------------------------------ -->
+     <!-- ================================================================================================================= -->
+    <!--  ================================================================================================================= -->
+
+
+       <div class="footer">
+            <div class="footer__ikonka">
+                <div class="footer__ikonka_name">Ororo.kz</div>
+                <div class="network">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                
+                </div>
+            </div>
+            <div class="footer__2">
+                <ul class = "footer__2__menu">
+                <li class = "footer_name"><a href="">Для вас</a></li>
+                    <li><a href="">Фильм</a></li>
+                    <li><a href="">Сериял</a></li>
+                    <li><a href="">Мультфилм</a></li>
+                    <li><a href="">Аниме</a></li>
+                    <li><a href="">Передачи и шоу</a></li>
+                    <li><a href="">Marvel</a></li>
+                </ul>
+            </div>
+            <div class="footer__1">
+                <ul class = "footer__1__menu">
+                    <li class = "footer_name"><a href="">О компании</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Кинотеатры</a></li>
+                    <li><a href="">Для бизнеса</a></li>
+                    <li><a href="">Новести</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Поддержка</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__3">
+                <ul class = "footer__3__menu">
+                <li class = "footer_name"><a href="">О компании</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Кинотеатры</a></li>
+                    <li><a href="">Для бизнеса</a></li>
+                    <li><a href="">Новести</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Поддержка</a></li>
+                </ul>
+            </div>
+       </div>
+    
+       <div class="footer__bottom">
+        <!-- <hr class = "footer__bottom_hr"> -->
+        <a href = ""><spam class="footer_bottom__1">Ororo.kz. Все права защищены</spam></a>
+        <a href = ""><spam class="footer_bottom__2">Пользовательское соглашение<spam/></a>
+        </div>
+    
+       
+       <script src="../Js/modal.js"></script>
 </body>
 
 </html>
