@@ -20,11 +20,12 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-
+    /* position: fixed; */
+    /* left: 0; */
     margin: 0;
     height: 83px;
     
-    align-items: center;
+    align-items: start;
 
 }
 
